@@ -134,10 +134,4 @@ Este projeto está licenciado sob a [MIT License](LICENSE).
 
 ```
 
-### Pontos Adicionais
 
-- **Customização**: Ajuste as informações de acordo com o seu repositório específico, incluindo o link do repositório e quaisquer instruções específicas do seu projeto.
-- **Licença**: Se você tiver um arquivo de licença específico, substitua a referência no README.
-- **Detalhes do Projeto**: Adicione mais detalhes sobre a funcionalidade dos testes, tecnologias utilizadas e quaisquer outras informações relevantes sobre o projeto.
-
-Sinta-se à vontade para ajustar e expandir conforme necessário. Se precisar de mais alguma coisa, estou à disposição!
