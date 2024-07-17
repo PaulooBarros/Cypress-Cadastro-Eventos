@@ -8,7 +8,7 @@
 
 describe('Teste Index Roteiro Aju', () => {
     beforeEach(() => {
-        cy.visit('http://127.0.0.1:5500/src/login.html')
+        cy.visit('./src/login.html')
     })
 
     it.only('preenchendoLogin', function(){

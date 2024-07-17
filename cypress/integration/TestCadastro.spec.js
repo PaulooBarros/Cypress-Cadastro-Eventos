@@ -7,7 +7,7 @@
 
 describe('Teste Cadastro Eventos', () => {
     beforeEach(() => {
-        cy.visit('http://127.0.0.1:5500/src/feed.html')
+        cy.visit('./src/feed.html')
     })
     it('Testando Título da Página', function(){
         cy.get('.event-form > h1').should('contain','Cadastro de Eventos').should('be.visible')

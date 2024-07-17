@@ -7,7 +7,7 @@
 
 describe('Teste Política e Privacidade Roteiro Aju', () => {
     beforeEach(() => {
-        cy.visit('http://127.0.0.1:5500/src/privacy.html')
+        cy.visit('./src/privacy.html')
     })
 
     it('Testando Título da Página', function(){
