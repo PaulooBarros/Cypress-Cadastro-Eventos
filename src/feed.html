@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Eventos</title>
+    <link rel="stylesheet" href="feed.css">
+</head>
+<body>
+    <div class="feed-wrapper">
+        <div class="event-form">
+            <h1>Cadastro de Eventos</h1>
+            <form id="evento-form">
+                <div class="input-group">
+                    <label for="nome">Nome do Evento *</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="input-group">
+                    <label for="local">Local *</label>
+                    <input type="text" id="local" name="local" required>
+                </div>
+                <div class="input-group">
+                    <label for="valor">Valor (opcional)</label>
+                    <input type="text" id="valor" name="valor" pattern="[0-9]*">
+                </div>
+                <div class="input-group">
+                    <label for="data">Data *</label>
+                    <input type="date" id="data" name="data" required>
+                </div>
+                <div class="input-group">
+                    <label for="atracoes">Atrações (opcional)</label>
+                    <input type="text" id="atracoes" name="atracoes">
+                </div>
+                <div class="input-group">
+                    <label for="descricao">Descrição (opcional)</label>
+                    <textarea id="descricao" name="descricao" rows="4"></textarea>
+                </div>
+                <button type="submit" class="submit-button">Cadastrar</button>
+            </form>
+            <div class="mensagem-cadastro">Evento cadastrado com sucesso!</div>
+        </div>
+        
+        <div class="eventos-table-wrapper">
+            <h1>Eventos Cadastrados</h1>
+            <table id="eventos-table">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Local</th>
+                        <th>Valor</th>
+                        <th>Data</th>
+                        <th>Atrações</th>
+                        <th>Descrição</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- As linhas dos eventos cadastrados serão adicionadas dinamicamente pelo JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="feed.js"></script>
+</body>
+</html>

@@ -1,0 +1,215 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: radial-gradient(circle, rgba(38,0,77,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+.intro-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.intro-container {
+    background-color: rgba(18, 18, 18, 0.9);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(128, 0, 128, 0.7);
+    text-align: center;
+    max-width: 600px;
+}
+
+body.light-mode .intro-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 20px rgba(200, 200, 200, 0.7);
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2.5em;
+    color: #d800d8;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+body.light-mode h1 {
+    color: #800080;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.7);
+}
+
+.intro-text {
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.intro-text p {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+body.light-mode .intro-text p {
+    color: #000000;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.intro-button {
+    padding: 12px 24px;
+    background-color: #800080;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    width: 120px; /* Defina o tamanho desejado */
+    text-transform: uppercase; /* Transforma o texto para maiúsculo */
+    font-family: 'Montserrat', sans-serif; /* Aplica a mesma fonte dos textos principais */
+}
+
+.intro-button:hover {
+    background-color: #d800d8;
+}
+
+.intro-button:active {
+    background-color: #540054;
+}
+
+.toggle-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.toggle-button {
+    background-color: #800080;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-button:hover {
+    background-color: #d800d8;
+}
+
+.toggle-button:active {
+    background-color: #540054;
+}
+
+.button-text {
+    margin-right: 10px;
+}
+
+.button-icon {
+    position: relative;
+    width: 24px;
+    height: 24px;
+}
+
+.sun, .moon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.sun {
+    width: 24px;
+    height: 24px;
+    background-color: yellow;
+    border-radius: 50%;
+}
+
+.moon {
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+body.light-mode .sun {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+body.light-mode .moon {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.5);
+}
+
+body.dark-mode .sun {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.5);
+}
+
+body.dark-mode .moon {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.intro-button.intro-button-policy {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #4B0082; /* Cor personalizada */
+    font-family: 'Montserrat', sans-serif; /* Aplica a mesma fonte dos textos principais */
+}
+
+.intro-button.intro-button-policy:hover {
+    background-color: #8A2BE2; /* Cor de hover personalizada */
+}
+
+.intro-button.intro-button-about {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 12px 24px;
+    background-color: #4B0082; /* Cor personalizada */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    width: 120px; /* Defina o tamanho desejado */
+    text-transform: uppercase; /* Transforma o texto para maiúsculo */
+    font-family: 'Montserrat', sans-serif; /* Aplica a mesma fonte dos textos principais */
+}
+
+.intro-button.intro-button-about:hover {
+    background-color: #8A2BE2; /* Cor de hover personalizada */
+}
+
+.intro-button.intro-button-about:active {
+    background-color: #483D8B; /* Cor de ativação personalizada */
+}
+

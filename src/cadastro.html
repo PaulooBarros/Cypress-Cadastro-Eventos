@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Roteiro Aju</title>
+    <link rel="stylesheet" href="cadastro.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+</head>
+<body class="dark-mode">
+    <div class="cadastro-wrapper">
+        <div class="cadastro-container">
+            <h1>Cadastro - Roteiro Aju</h1>
+            <form id="form-cadastro" onsubmit="return realizarCadastro()">
+                <div class="input-group">
+                    <label for="username">Usuário</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="input-group">
+                    <label for="confirm-password">Confirmar Senha</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+                <button type="submit" class="cadastro-button">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+    <script src="cadastro.js"></script>
+</body>
+</html>
